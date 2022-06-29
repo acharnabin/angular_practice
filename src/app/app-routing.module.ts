@@ -3,16 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 
-const routes: Routes = [
-  { path: 'auth', component: AuthRoutingModule }
-];
+
+const routes: Routes = [{ path: '', component: AuthRoutingModule }];
 
 @NgModule({
   declarations: [],
-  imports: [
-   RouterModule.forRoot(routes),
-   
-  ],
-  exports:[RouterModule]
+  imports: [AuthRoutingModule, RouterModule.forRoot(routes), RouterModule],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

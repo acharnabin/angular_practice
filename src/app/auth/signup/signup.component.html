@@ -1,1 +1,74 @@
-<p>signup works!</p>
+<div class="container">
+  <div class="card shadow my-4">
+    <h2 class="p-2 text-white text-center bg-primary">Sign Up</h2>
+    <form (submit)="submit($event)" class="p-2">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          value="{{ apiData.name }}"
+          type="text"
+          class="form-control"
+          placeholder="First Name"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="email"
+          aria-label="email"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="password"
+          aria-label="password"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="phone"
+          aria-label="phone"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+
+      <a
+        routerLink="/auth/signin"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Go to login
+        
+        
+        </a
+      >
+    </form>
+  </div>
+</div>

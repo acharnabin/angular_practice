@@ -1,22 +1,9 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
+
   <app-header-component></app-header-component>
   <router-outlet></router-outlet>
-  <button (click)="incrementCount()">Increment</button>
-  <h1>{{ count }}</h1>
-  <button (click)="decrementCount()">Decrement</button>
-
-
-
-<form (onsubmit)="addItemsToList($event)">
-  <input   placeholder="Enter Name" name="name" (keyup)="editForm($event)"/>
-    <h1>name=> {{name}}</h1>
-  <input type="text" placeholder="Enter Email" name="email"(keyup)="editForm($event)" />
-  <input type="text" placeholder="Enter Phone" name="phone"(keyup)="editForm($event)" />
-  <button type="submit">Add todo</button>
-</form>
 
  
-
 
 </div>
